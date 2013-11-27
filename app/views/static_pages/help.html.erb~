@@ -13,35 +13,16 @@
 			<img src="http://i.imgur.com/md1NTPS.png?1" width="220" height="220" />
 		</div>
 		<div id = 'how-it-works-text'>
-		      <div id='how-search'>
 			<h1>Search</h1>
 			<p>Look for your item using keywords</p>
-		      </div>
-		      <div id='how-customize'>			
 			<h1>Customize</h1>
 			<p>Pick a price range, whether you want it new or used, and even choose to only be matched with domestic sellers to get your item ASAP. </p>
-		      </div>
-		      <div id='how-match'>
 			<h1>Get Matched</h1>
 			 <p>We do the rest! When we find the items that best fit your preferences, we will notify you immediately. If you don’t like the initial matches, or if matches can’t be found right away, Denarri will keep a lookout and let you know when new matches are listed. Doesn’t get any easier than that.</p>
-		      </div>
-		      <div id='how-enjoy'>
 			<h1>Enjoy Your New Item!</h1>
 			<p>Once you confirm the match, you’ll simply pay for the item, and it’ll be at your doorstep in no time. You didn’t need to keep track of unpredictable  auctions, or browse every day until you found what you were looking for. How awesome is that?</p>
-		      </div>
 	</div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- will be implemented in Phase II
 
