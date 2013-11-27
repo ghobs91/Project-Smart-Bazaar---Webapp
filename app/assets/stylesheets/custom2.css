@@ -5058,3 +5058,57 @@ input {
 aside textarea {
   height: 100px;
   margin-bottom: 5px; }
+
+#how-page-header {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+#how-it-works-pics {
+	float:left;
+	width: 25%
+}
+
+#how-it-works-pics img{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#how-it-works-text {
+	float:right;
+	width: 75%;
+}
+
+#how-it-works-text h1 {
+	font-size: 30px;
+	text-align: left;
+	margin-bottom: 40px;
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+#how-it-works-text p {
+	text-align: left;
+	margin-left: 50px;
+}
+
+#how-search {
+	margin-top:-50px;
+}
+
+#how-customize {
+	margin-top: 225px;
+}
+
+#how-match {
+	margin-top: 200px;
+}
+
+#how-enjoy {
+	margin-top: 145px;
+}
+
+
+
+
