@@ -172,7 +172,7 @@ textarea {
     page-break-after: avoid; } }
 body {
   margin: 0;
-  font-family: Raleway, Roboto, Sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -180,6 +180,8 @@ body {
 
 body#home-page {
 	background-image: url('background.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -783,7 +785,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 label {
   display: block;
@@ -3551,7 +3553,7 @@ input[type="submit"].btn {
   .navbar-search .search-query {
     margin-bottom: 0;
     padding: 4px 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 1;
@@ -4854,7 +4856,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     line-height: 1;
     color: white;
     letter-spacing: -1px;
-    text-shadow: 4px 4px 4px black; }
+    text-shadow: 3px 3px 3px black;}
   .hero-unit li {
     line-height: 30px; }
 
@@ -4942,19 +4944,36 @@ p {
   line-height: 1.7em; }
 
 /* header */
+
+#denarri_logo
+{
+float: left;
+height:35px;
+width:35px;
+padding-top:5px;
+padding-bottom:5px;
+padding-right:10px;
+padding-left:5px;
+}
+
 #logo {
   float: left;
-  margin-right: 10px;
   font-size: 1.7em;
   color: white;
-  text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
-  font-weight: bold;
+ 
   line-height: 1; }
   #logo:hover {
     color: white;
     text-decoration: none; }
+
+/* homepage */
+
+.home_caption {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
 
 /* footer */
 footer {
