@@ -1,6 +1,7 @@
-<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 <body id='home-page'>
 <% if signed_in? %>
+ <div class = "row-box">
   <div class="row">
     <aside class="span4">
       <section>
@@ -11,13 +12,15 @@
       </section>
     </aside>
     <div class="span8">
-      <h3>Micropost Feed</h3>
+      <h3>Item Watch List</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
+ </div>
 <% else %>
   <div class="center hero-unit">
-    <h1>Make Shopping a Conversation</h1>
+    <h1>Make Shopping a Conversation.</h1>
+    <p class="home_caption"> Thanks for being part of our Alpha Test! </p>
 
     <%= link_to "Sign up now!", signup_path,
                                 class: "btn btn-large btn-primary" %>

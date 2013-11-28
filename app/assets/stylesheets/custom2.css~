@@ -213,7 +213,10 @@ a:focus {
   border-radius: 500px; }
 
 .row {
+  padding-top: 10px;
   margin-left: -20px;
+  font-weight:bold;
+  background:rgba(255,255,255, 0.6);
   *zoom: 1; }
   .row:before, .row:after {
     display: table;
@@ -221,6 +224,7 @@ a:focus {
     line-height: 0; }
   .row:after {
     clear: both; }
+
 
 [class*="span"] {
   float: left;
@@ -3595,8 +3599,7 @@ input[type="submit"].btn {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 100%;
-  margin-left: 30px;
+  width: 95%;
 }
 
 .navbar-fixed-top {

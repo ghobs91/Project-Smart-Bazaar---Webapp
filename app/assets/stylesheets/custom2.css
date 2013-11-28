@@ -213,7 +213,10 @@ a:focus {
   border-radius: 500px; }
 
 .row {
+  padding-top: 10px;
   margin-left: -20px;
+  font-weight:bold;
+  background:rgba(255,255,255, 0.7);
   *zoom: 1; }
   .row:before, .row:after {
     display: table;
@@ -221,6 +224,7 @@ a:focus {
     line-height: 0; }
   .row:after {
     clear: both; }
+
 
 [class*="span"] {
   float: left;
