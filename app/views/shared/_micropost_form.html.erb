@@ -1,8 +1,20 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+
   <div class="field">
-    <%= f.text_area :content, placeholder: "Type in item name, price range, and condition preferences. Ex: iPhone 5 16gb, $350-$450, new only" %>
+    <%= f.label :Keyword %>
+    <%= f.text_area :keyword, placeholder: "'iPhone 5 16gb'" %>
   </div>
 
-  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <div class="field">
+    <%= f.label :Price %>
+    $ <%= f.text_area :price, placeholder: "'300-500'" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Condition %>
+    <%= f.text_area :condition, placeholder: "'Used'" %>
+  </div>
+
+   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
