@@ -20,7 +20,7 @@ class MicropostsController < ApplicationController
   private
 
     def micropost_params
-      params.require(:micropost).permit(:keyword, :price, :condition)
+      params.require(:micropost).permit(:keyword, :min, :max, :condition)
     end
 
     def correct_user
