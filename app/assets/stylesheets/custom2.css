@@ -781,8 +781,8 @@ input,
 button,
 select,
 textarea {
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
   line-height: 20px; }
 
 input,
@@ -5070,6 +5070,7 @@ input {
     border-top: 1px solid #e8e8e8; }
 
 .content {
+  font-size: 20px;
   display: block; }
 
 .timestamp {
