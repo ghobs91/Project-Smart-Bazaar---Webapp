@@ -24,7 +24,8 @@
 
   <div class="field">
     <%= f.label :Condition %>
-    <%= f.text_area :condition, placeholder: "'Ex: Used'" %>
+    <%= f.select(:condition, [['New'], ['Used']]) %>
+    
   </div>
 
 
