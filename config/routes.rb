@@ -6,7 +6,8 @@ SampleApp::Application.routes.draw do
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
-  match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/howitworks',    to: 'static_pages#howitworks',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/matchcenter', to: 'static_pages#matchcenter', via: 'get'
 end
