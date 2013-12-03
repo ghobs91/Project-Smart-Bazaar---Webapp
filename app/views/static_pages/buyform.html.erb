@@ -1,0 +1,37 @@
+<% provide(:title, 'Buy') %>
+
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <div class="field">
+    <%= f.label :Keyword %>
+    <%= f.text_area :keyword, placeholder: "'Ex: iPhone 5 16gb'" %>
+  </div>
+
+
+<br><br>
+
+
+  <div class="field">
+  <%= f.label :Price_Range %>
+  <%= f.text_area :min, placeholder: "'Ex: 300'" %>
+  </div>
+  -
+  <div class="field">
+  <%= f.text_area :max, placeholder: "'Ex: 500'" %>
+  </div>
+
+
+<br><br>
+
+  <div class="field">
+    <%= f.label :Condition %>
+    <%= f.select(:condition, [['New'], ['Used']]) %>
+  </div>
+
+
+  <%= f.submit "Buy", class: "btn btn-large btn-primary" %>
+
+  
+
+  <% end %>
