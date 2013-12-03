@@ -4853,7 +4853,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  
+  color: inherit;
   }
   .hero-unit h1 {
     margin-bottom: 0;
