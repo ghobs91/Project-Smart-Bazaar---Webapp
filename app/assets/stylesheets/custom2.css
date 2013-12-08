@@ -5109,6 +5109,12 @@ aside textarea {
   margin-left: 50px;
 }
 
+#how-img {
+
+  width: 220px;
+  height: 220px;
+}
+
 /* matchcenter page */
 
 #matchcenter-text {
