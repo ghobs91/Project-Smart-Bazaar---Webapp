@@ -1,4 +1,7 @@
-<%= form_for(@micropost) do |f| %>
+<% provide(:title, 'Buy') %>
+
+
+   <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
   <div class="field">

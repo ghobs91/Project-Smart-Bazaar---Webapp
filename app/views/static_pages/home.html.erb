@@ -1,19 +1,23 @@
 <body id='home-page'>
 <% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>Item Watch List</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>
+
+<div class="center hero-unit">
+    <h1>Make Shopping a Conversation.</h1>
+    <p class="home_caption"> Thanks for being part of our Alpha Test! </p>
+
+</div>
+
+<div class="buy-sell-btn">  
+  <%= link_to "Buy", buy_path,
+                                  class: "btn btn-large btn-primary" %>
+
+  <div class="buy-sell-divider"></div>                                
+
+  <%= link_to "Sell", sell_path,
+                                  class: "btn btn-large btn-primary" %>
+</div>
+
+ 
 <% else %>
   <div class="center hero-unit">
     <h1>Make Shopping a Conversation.</h1>

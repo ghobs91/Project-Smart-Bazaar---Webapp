@@ -5122,4 +5122,19 @@ aside textarea {
   font-family: 'Roboto', sans-serif;
 }
 
+/* buy-sell buttons */
 
+.buy-sell-btn {
+text-align: center;
+}
+
+.buy-sell-divider {
+width:100px;
+height:auto;
+display:inline-block;
+}
+
+#sell-text {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}

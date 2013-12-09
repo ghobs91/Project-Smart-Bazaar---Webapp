@@ -2,6 +2,10 @@ class MicropostsController < ApplicationController
   before_action :signed_in_user
   before_action :correct_user,   only: :destroy
 
+  def new 
+    @micropost = current_user.microposts.build
+  end
+
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
