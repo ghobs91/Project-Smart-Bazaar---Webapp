@@ -10,7 +10,7 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
       flash[:success] = "Sweet! The item has been added to your watch list, and we'll notify you whenever matches are found."
-      redirect_to root_url
+      redirect_to buy_path
     else
       render 'static_pages/home'
     end
@@ -18,7 +18,7 @@ class MicropostsController < ApplicationController
 
   def destroy
     @micropost.destroy
-    redirect_to root_url
+    redirect_to buy_path
   end
 
   private
