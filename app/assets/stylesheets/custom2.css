@@ -5161,3 +5161,8 @@ display:inline-block;
   font-family: 'Roboto', sans-serif;
 }
 
+/* sell page */
+#sellimg {
+    display: block;    
+    text-align: center;
+}
