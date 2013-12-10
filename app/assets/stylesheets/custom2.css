@@ -5166,3 +5166,14 @@ display:inline-block;
     display: block;    
     text-align: center;
 }
+
+/* user profile */
+
+.profile_name {
+  text-align: center;
+}
+
+.profile_img {
+  margin-left: 32px;
+}
+

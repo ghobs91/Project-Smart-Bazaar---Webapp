@@ -8,7 +8,6 @@ SampleApp::Application.routes.draw do
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/howitworks',    to: 'static_pages#howitworks',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
-  match '/contact', to: 'static_pages#contact', via: 'get'
   match '/matchcenter', to: 'static_pages#matchcenter', via: 'get'
   match '/buy', to: 'static_pages#buy', via: 'get'
   match '/sell', to: 'static_pages#sell', via: 'get'
