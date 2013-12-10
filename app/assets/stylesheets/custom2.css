@@ -7,6 +7,8 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
+
 article,
 aside,
 details,
@@ -248,7 +250,17 @@ a:focus {
   width: 220px; }
 
 .span4 {
-  width: 300px; }
+  width: 350px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  margin-left: 0px;
+  margin-right: 100px;
+  margin-top: -25px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+  box-shadow: 6px 0px 5px 0px #999, 0px 0px 5px -5px #999;}
 
 .span5 {
   width: 380px; }
@@ -260,6 +272,8 @@ a:focus {
   width: 540px; }
 
 .span8 {
+  margin-left: 600px;
+  margin-top: 25px;
   width: 620px; }
 
 .span9 {
