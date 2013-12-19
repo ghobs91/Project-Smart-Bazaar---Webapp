@@ -1,7 +1,7 @@
 <li class = "microposts">
   <div class = "micropost_box">
       
-        <img src="http://i.imgur.com/9OlztJm.jpg?1" alt="" width="100" height="150">
+        <img src="http://i.imgur.com/9OlztJm.jpg?1" alt="" width="100" height="130">
         
     <div class="content">
       <%= feed_item.keyword %>
@@ -15,9 +15,8 @@
       </div>
     </div>
     
-    <div class="timestamp">
-      Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
-    </div>
+    <br>
+    
     <div class = "delete_link">
     <% if current_user?(feed_item.user) %>
       <%= link_to "delete", feed_item, method: :delete,
