@@ -5103,6 +5103,35 @@ input {
     box-shadow: 2px 2px 10px #888888;
     border: 1px solid #e8e8e8; }
 
+#microposts {
+padding: 10px ;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 200px;
+    height: 250px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #888888;
+    border: 1px solid #e8e8e8;
+
+}
+
+#api_microposts {
+padding: 10px ;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 200px;
+    height: auto;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #888888;
+    border: 1px solid #e8e8e8;
+}
+
+#api{
+  margin-left: 50px;
+}
+
 .micropost_box {
 text-align: center;
 }

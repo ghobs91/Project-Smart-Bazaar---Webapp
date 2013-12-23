@@ -11,5 +11,6 @@ SampleApp::Application.routes.draw do
   match '/matchcenter', to: 'static_pages#matchcenter', via: 'get'
   match '/buy', to: 'static_pages#buy', via: 'get'
   match '/sell', to: 'static_pages#sell', via: 'get'
+  match '/proto-matchcenter', to: 'static_pages#proto-matchcenter', via: 'get'
 
 end
