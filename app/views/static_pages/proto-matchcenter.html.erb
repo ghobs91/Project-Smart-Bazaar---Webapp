@@ -1,5 +1,9 @@
+<p id="matchcenter_header">MatchCenter</p>
 
-<h1>MatchCenter</h1>
+<!----Item Start-->
+
+<p id="matchcenter_item_header">iPhone 5 16gb</p>
+
 <div id="api"></div>
 
 <script>
@@ -15,7 +19,6 @@ function _cb_findItemsByKeywords(root)
     var title    = item.title;
     var pic      = item.galleryURL;
     var viewitem = item.viewItemURL;
-
     if (null != title && null != viewitem)
     {
       html.push(
@@ -26,8 +29,6 @@ function _cb_findItemsByKeywords(root)
   }
   html.push('</tbody></table>');
   document.getElementById("api").innerHTML = html.join("");
-}
-
 
 // Create a JavaScript array of the item filters you want to use in your request
 var filterarray = [
@@ -48,6 +49,7 @@ var filterarray = [
    "paramName":"",
    "paramValue":""},
   ];
+
 
 // Define global variable for the URL filter
 var urlfilter = "";
@@ -80,9 +82,11 @@ function  buildURLArray() {
 // Execute the function to build the URL filter
 buildURLArray(filterarray);
 
+url += urlfilter;
 
 
 
+}
 </script>
 
 
@@ -91,4 +95,8 @@ Use the value of your appid for the appid parameter below.
 -->
 <script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=AndrewGh-2d30-4c8d-a9cd-248083bc4d0f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=iphone%205%2016gb%20unlocked&paginationInput.entriesPerPage=3>
 </script>
+
+<!----Item End-->
+
+
 

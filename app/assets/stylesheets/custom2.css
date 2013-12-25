@@ -5193,6 +5193,18 @@ aside textarea {
   font-family: 'Roboto', sans-serif;
 }
 
+#matchcenter_header {
+  font-size: 40px;
+  text-align: center;
+}
+
+#matchcenter_item_header {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+
+
 /* buy-sell buttons */
 
 .buy-sell-btn {
