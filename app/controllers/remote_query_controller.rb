@@ -1,4 +1,4 @@
-=begin class RemoteQueryController < ApplicationController
+begin class RemoteQueryController < ApplicationController
 	#include amazon helpers
 	include Amazon::AWS
 	include Amazon::AWS::Search

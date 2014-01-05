@@ -12,5 +12,6 @@ SampleApp::Application.routes.draw do
   match '/buy', to: 'static_pages#buy', via: 'get'
   match '/sell', to: 'static_pages#sell', via: 'get'
   match '/proto-matchcenter', to: 'static_pages#proto-matchcenter', via: 'get'
+  match '/amazon-api', to: 'static_pages#amazon-api', via: 'get'
 
 end
