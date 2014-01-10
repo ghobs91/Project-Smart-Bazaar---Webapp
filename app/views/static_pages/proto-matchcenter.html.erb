@@ -17,16 +17,22 @@ function _cb_findItemsByKeywords(root)
 
   for (var i = 0; i < items.length; ++i)  
   {
-    var item     = items[i];
-    var title    = item.title;
-    var pic      = item.galleryURL;
-    var viewitem = item.viewItemURL;
+    var item        = items[i];
+    var title       = item.title;
+    var pic         = item.galleryURL;
+    var viewitem    = item.viewItemURL;
+    var price       = item.buyItNowPrice
     if (null != title && null != viewitem)
     {
       html.push(
         '<tr id="api_microposts"><td>'
-         + '<img src="' + pic + '" border="0" width="190">' + '<a href="' + viewitem + '" target="_blank">' + title + 
-         '</a></td></tr>');
+         + '<a href="'
+          + viewitem + '" target="_blank">' + '<img src="' + pic + '" border="0" width="190">' +
+          '</a>' 
+          + title
+          + '<br>' 
+          + '<p class="price">' + price + '</p>' +
+          '</td></tr>');
     }
   }
   html.push('</tbody></table>');
@@ -78,7 +84,7 @@ url += urlfilter;
 Use the value of your appid for the appid parameter below.
 -->
 
-<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=AndrewGh-2d30-4c8d-a9cd-248083bc4d0f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.12.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&sortOrder=PricePlusShippingLowest&paginationInput.entriesPerPage=6&outputSelector=AspectHistogram&itemFilter(0).name=Condition&itemFilter(0).value(0)=New&itemFilter(1).name=MaxPrice&itemFilter(1).value=450.00&itemFilter(1).paramName=Currency&itemFilter(1).paramValue=USD&itemFilter(2).name=MinPrice&itemFilter(2).value=350.00&itemFilter(2).paramName=Currency&itemFilter(2).paramValue=USD&itemFilter(3).name=ListingType&itemFilter(3).value=FixedPrice&keywords=Moto%20x%2016gb>
+<script src=http://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=AndrewGh-2d30-4c8d-a9cd-248083bc4d0f&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.12.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&sortOrder=PricePlusShippingLowest&paginationInput.entriesPerPage=20&outputSelector=AspectHistogram&itemFilter(0).name=Condition&itemFilter(0).value(0)=New&itemFilter(1).name=MaxPrice&itemFilter(1).value=450.00&itemFilter(1).paramName=Currency&itemFilter(1).paramValue=USD&itemFilter(2).name=MinPrice&itemFilter(2).value=350.00&itemFilter(2).paramName=Currency&itemFilter(2).paramValue=USD&itemFilter(3).name=ListingType&itemFilter(3).value=FixedPrice&keywords=Moto+x+16gb+unlocked>
 
 </script>
 
