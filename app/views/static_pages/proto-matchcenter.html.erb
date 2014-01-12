@@ -2,7 +2,7 @@
 
 <!----Item Start-->
 
-<p id="matchcenter_item_header">iPhone 5 16gb</p>
+<p id="matchcenter_item_header">Moto X 16GB Unlocked New $350-$450</p>
 
 
 <div id="api"></div>
@@ -21,15 +21,15 @@ function _cb_findItemsByKeywords(root)
     var title       = item.title;
     var pic         = item.galleryURL;
     var viewitem    = item.viewItemURL;
-    var price       = item.buyItNowPrice
+    var price       = item.ConvertedCurrentPrice;
     if (null != title && null != viewitem)
     {
       html.push(
         '<tr id="api_microposts"><td>'
          + '<a href="'
-          + viewitem + '" target="_blank">' + '<img src="' + pic + '" border="0" width="190">' +
+          + viewitem + '" target="_blank">' + '<img src="' + pic + '" border="0" width="180">' +
           '</a>' 
-          + title
+          + title +
           + '<br>' 
           + '<p class="price">' + price + '</p>' +
           '</td></tr>');
