@@ -1,4 +1,4 @@
-/*
+
 // Base URL to send request to
 var search_controller_route = '/remote/'
 
